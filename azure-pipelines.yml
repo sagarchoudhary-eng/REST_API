@@ -30,3 +30,7 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
+
+- task: CmdLine@2
+  inputs:
+    script: 'copy C:\Azure_SelfHost_Demo\agent\_work\1\a\Gali_Gali\target\*.war D:\'
