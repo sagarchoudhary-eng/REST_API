@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name:SAGAR
+  name:default
 
 steps:
 - task: Maven@3
